@@ -33,12 +33,15 @@
 
                     <div class="form-group">
                         <label for="username">Username:</label>
-                        <asp:TextBox ID="email" CssClass="email" runat="server" placeholder="Enter Username" />
+                        <asp:TextBox autocomplete="off" ID="username" CssClass="email" runat="server" placeholder="Enter Username" />
+
                     </div>
+
                     <div class="form-group">
                         <label for="password">Password:</label>
-                        <asp:TextBox ID="password" CssClass="password" runat="server" TextMode="Password" placeholder="Enter Password" />
+                        <asp:TextBox autocomplete="off" ID="password" CssClass="password" runat="server" TextMode="Password" placeholder="Enter Password" />
                     </div>
+
                     <asp:Button ID="loginBtn" CssClass="button" runat="server" Text="Sign In" OnClick="loginBtn_Click" />
                     <div class="text">
                         <p>Don't have an account yet? <a href="Register.aspx">Sign Up!</a></p>

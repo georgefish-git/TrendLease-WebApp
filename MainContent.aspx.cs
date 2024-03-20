@@ -11,7 +11,13 @@ namespace TrendLease_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
 
+            // Retrieve username from query string
+            string username = Request.QueryString["username"];
+
+            // Store username in session state
+            Session["Username"] = username;
         }
     }
 }
